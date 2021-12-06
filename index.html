@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Zip Code Weather Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap"
+          rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+
+<div>
+  <h1>Enter Zip code of 5 digits and get the weather</h1>
+  <div>
+    <input type="text" id="zip" value="10010"/>
+    <button id="zip-button">Get Weather by entering Zip code</button>
+  </div>
+  <div>
+    <h2>Or just press the button below </h2>
+    <button id="geo-button">Get Weather from browser’s geolocation</button>
+    <button id="forecast-button">Get the Weather forecast</button>
+  </div>
+
+  <div>
+    <section id="current-weather"></section>
+  </div>
+</div>
+
+
+
+<script src="consts.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
