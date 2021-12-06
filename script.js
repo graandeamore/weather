@@ -126,8 +126,7 @@ getWeatherForecast.addEventListener("click", () => {
         let weatherDisplay = ''
         if (data.cod !== '404') {           //if status not 404 make html
             //DATA
-            for (i=0;i<5;i++){
-                console.log(i+1)
+            for (i=0;i<40;i += 8 ){  //API for 30 days throws 401, so i used api for 3 days per 40 hours, so we need 5 days => 40/5; iterator = 8, threshold = i<40
                 let Getday = new Date(data.list[i].dt_txt).getDay()
                 let SetDay = ['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
                 console.log('day:', SetDay[Getday-1]) //index from 0, then - 1
